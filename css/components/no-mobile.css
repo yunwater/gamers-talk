@@ -5,10 +5,17 @@
   width: 100vw;
   background-color: var(--yellow);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 0;
   font-size: 32px;
+}
+
+#no-mobile p:last-child {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 645px) {
