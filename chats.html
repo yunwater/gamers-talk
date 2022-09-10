@@ -5,16 +5,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Talk</title>
+    <title>Chats - Gamers Talk</title>
   </head>
-  <body>
+  <body id="body-chats">
 
     <header class="screen-header">
       <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
+        <a href="find.html">
+          <span><i class="fas fa-search fa-lg"></i></span>
+        </a>
+        <a href="chat.html">
+          <span><i class="far fa-comment-dots fa-lg"></i></span>
+        </a>
+        <a href="more.html">
+          <span><i class="fas fa-music fa-lg"></i></span>
+        </a>
         <a href="settings.html">
           <span><div class="point"></div><i class="fas fa-cog fa-lg"></i></span>
         </a>
@@ -40,10 +46,10 @@
       <a href="chat.html">
         <div class="user-component">
           <div class="user-componet__column">
-            <img src="https://shop4.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop4.daumcdn.net%2Fshophow%2Fp%2FQ16867700227.jpg%3Fut%3D20220331224030" class="user-component__avatar user-component__avatar" />
+            <img src="img/dbd_david.jpg" class="user-component__avatar user-component__avatar" />
             <div class="user-component__text">
-              <h4 class="user-component__title">Indigo</h4>
-              <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+              <h4 class="user-component__title">David</h4>
+              <h6 class="user-component__subtitle">But NO MITHER can't forgive.</h6>
             </div>
           </div>
           <div class="user-componet__column">
@@ -53,13 +59,13 @@
         </div>
       </a>
 
-      <a href="chat.html">
+      <a href="chat_stray.html">
         <div class="user-component">
           <div class="user-componet__column">
-            <img src="https://cdn.pixabay.com/photo/2018/02/09/12/55/footwear-3141539__340.jpg" class="user-component__avatar user-component__avatar" />
+            <img src="img/stray_cat.jpg" class="user-component__avatar user-component__avatar" />
             <div class="user-component__text">
-              <h4 class="user-component__title">Allen</h4>
-              <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+              <h4 class="user-component__title">Stray cat</h4>
+              <h6 class="user-component__subtitle">Please check My Gamers Account Info</h6>
             </div>
           </div>
           <div class="user-componet__column">
@@ -90,7 +96,10 @@
       </ul>
     </nav>
 
+    <div class="chats-background"></div>
+
     <div id="no-mobile">
+      <img src="img/wide.png">
       <p>Your screen is too big T.T</p>
       <p>Please reduce the width</p>
     </div>
