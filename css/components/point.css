@@ -1,5 +1,5 @@
 .point {
-  background-color: tomato;
+  background-color: var(--point-color);
   width: 5px;
   height: 5px;
   border-radius: 2.5px;

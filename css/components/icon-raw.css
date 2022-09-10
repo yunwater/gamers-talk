@@ -8,6 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon-row__icon:hover {
+  opacity: 0.4;
 }
 
 .icon-row__icon i {

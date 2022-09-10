@@ -6,6 +6,14 @@
   justify-content: center;
 }
 
+.alt-header i {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.alt-header i:hover {
+  opacity: 0.4;
+}
+
 .alt-header__title {
   font-size: 28px;
   font-weight: 600;
