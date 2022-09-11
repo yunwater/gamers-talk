@@ -1,3 +1,27 @@
+.more-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/horror-canyon.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 7, 59, 0.6);
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
+.user-componet__column .fa-comment-alt {
+  transition: color 0.3s ease-in-out;
+}
+
+.user-componet__column .fa-comment-alt:hover {
+  color: var(--main-color);
+}
+
 .more-screen .icon-row {
   margin-top: 35px;
 }
@@ -37,4 +61,12 @@
 .more-suggestions__icon-img i {
   font-size: 24px;
   color: white;
+}
+
+.more-suggestions__icon {
+  transition: color 0.3s ease-in-out;
+}
+
+.more-suggestions__icon:hover {
+  color: var(--point-color);
 }

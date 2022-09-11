@@ -1,3 +1,19 @@
+.settings-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/retro_moon.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(71, 12, 198, 0.8);
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
 .settings__setting {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

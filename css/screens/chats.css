@@ -1,0 +1,23 @@
+.chats-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/fantastic-illustration.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 7, 59, 0.8);
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
+#body-chats .user-component__text {
+  transition: opacity 0.3s ease-in-out;
+}
+
+#body-chats .user-component__text:hover {
+  opacity: 0.4;
+}

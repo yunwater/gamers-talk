@@ -1,20 +1,53 @@
-#chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+.chat-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/dbd_map.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 7, 59, 0.5);
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
+.chat-stray-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/stray_bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 7, 59, 0.75);
+  background-blend-mode: multiply;
+  height: 100vh;
 }
 
 #chat-screen .status-bar {
   z-index: 999999;
-  background-color: #abc1d1;
 }
 
 #chat-screen .alt-header {
-  background-color: #abc1d1;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
   top: 0;
 }
+
+/* #chat-screen .alt-header i {
+  transition: opacity 0.2s ease-in-out;
+}
+
+#chat-screen .alt-header i:hover {
+  opacity: 0.4;
+} */
 
 @keyframes fadeIn {
   from {
@@ -37,7 +70,7 @@
 
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
+  background-color: #28b4cf;
   padding: 12px 20px;
   font-size: 14px;
   border-radius: 50px;
@@ -48,6 +81,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  color: #222222;
 }
 
 .message-row img {
@@ -80,6 +114,7 @@
 .message__time {
   opacity: 0.8;
   font-size: 14px;
+  color: white;
 }
 
 .message-row--own {
@@ -87,7 +122,8 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: #442def;
+  color: white;
   border-top-right-radius: 0;
   border-top-left-radius: 15px;
   margin-right: 0px;
@@ -122,6 +158,7 @@
 
 .reply i {
   opacity: 0.5;
+  color: #222222;
 }
 
 .reply input {
@@ -146,7 +183,7 @@
 }
 
 .reply__column button {
-  background-color: var(--yellow);
+  background-color: var(--main-color);
   border: none;
   width: 30px;
   height: 30px;

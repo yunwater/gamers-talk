@@ -1,3 +1,19 @@
+.login-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/cool_geometric.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
 .welcome-header {
   margin: 90px 0;
   text-align: center;
@@ -28,26 +44,37 @@
   padding: 15px 0;
   font-size: 18px;
   margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#login-form input:nth-child(2) {
+  margin-bottom: 45px;
 }
 
 #login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+  border-bottom: 2px solid white;
+  color: white;
 }
 
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--main-color);
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--main-color);
   cursor: pointer;
   padding: 20px 0;
   border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: #442def;
 }
 
 #login-form a {
@@ -55,4 +82,9 @@
   text-decoration: none;
   color: inherit;
   font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+#login-form a:hover {
+  color: var(--main-color);
 }

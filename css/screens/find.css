@@ -1,3 +1,19 @@
+.find-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/wizard-dark-dungeon.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 7, 59, 0.6);
+  background-blend-mode: multiply;
+  height: 140vh;
+}
+
 .recommended-friends {
   padding: 25px 0;
   border-top: var(--main-border);
@@ -24,8 +40,12 @@
   margin: 25px 0;
 }
 
-.open-chat__header span {
-  opacity: 0.8;
+.open-chat__header a {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.open-chat__header a:hover {
+  opacity: 0.4;
 }
 
 .open-post {
@@ -38,6 +58,14 @@
 .open-post__title {
   font-weight: 600;
   margin-bottom: 7px;
+}
+
+.open-post__column {
+  transition: color 0.3s ease-in-out;
+}
+
+.open-post__column:hover {
+  color: var(--main-color);
 }
 
 .open-post__hashtags {
@@ -98,7 +126,7 @@
 }
 
 .open-post__heart-count span {
-  margin-left: 3px;
+  margin-left: 6px;
 }
 
 @keyframes heartBeat {
@@ -107,7 +135,7 @@
     transform: none;
   }
   50% {
-    color: tomato;
+    color: var(--point-color);
     transform: scale(1.4);
   }
   100% {
@@ -116,7 +144,7 @@
   }
 }
 
-.open-post__heart-count:hover i {
+.open-post__photo:hover i {
   will-change: transform;
   animation: heartBeat 1s linear infinite;
 }

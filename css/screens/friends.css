@@ -1,11 +1,32 @@
+.friends-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../img/eerie-dark-castle.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(49, 21, 206, 0.7);
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
 #friends-display-link {
   text-align: center;
   display: block;
-  background-color: #fafafa;
+  background-color: #28b4cf;
   padding: 15px 0;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   margin-top: -20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#friends-display-link:hover {
+  background-color: #442def;
 }
 
 #friends-display-link i {
@@ -22,7 +43,7 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: var(--gray);
+  color: var(--info-color);
 }
 @keyframes hideSplashScreen {
   from {
@@ -34,8 +55,16 @@
   }
 }
 
+.friends-screen .user-component {
+  transition: color 0.3s ease-in-out;
+}
+
+.friends-screen .user-component:hover {
+  color: var(--main-color);
+}
+
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--main-color);
   position: absolute;
   height: 100vh;
   width: 100vw;
